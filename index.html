@@ -696,6 +696,20 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed --> 
     <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>   
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+	<script src="js/jQuery.YouTube.HD.Thumbnail.js"></script>
+	<script>
+		(function ($) {
+			$('iframe.yt-hd-thumbnail').youTubeHDThumbnail({darkenThumbnail: false});
+			$('iframe.yt-hd-thumbnail-darken').youTubeHDThumbnail({darkenThumbnail: true});
+		})(jQuery);
+	</script>	
+	
+	
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.4.1.js"></script>
     <script src="collapse.js"></script>
 
