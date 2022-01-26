@@ -548,7 +548,39 @@ mark,
 }
 
 #imgOne {
-	background-color: lightcoral;
+	background-color: #FFDED1;
+}
+
+#imgTwo {
+	background-color: #CAD4DE;
+}
+
+#imgThree {
+	background-color: #D6EBE6;
+}
+
+#imgFour {
+	background-color: #FFEED9;
+}
+
+#imgFive {
+	background-color: #FFF9E2;
+}
+
+#imgSix {
+	background-color: #FFE9E5;
+}
+
+#imgSeven {
+	background-color: #EAEFD3;
+}
+
+#imgEight {
+	background-color: #F1D7E9;
+}
+
+#imgNine {
+	background-color: #E8E0F5;
 }
 
 a[aria-expanded="false"]{
