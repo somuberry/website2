@@ -4936,7 +4936,8 @@ input[type="button"].btn-block {
 }
 
 .cardback {
-
+	padding-left: 7px;
+	padding-right: 7px;
 }
 
 .card > .list-group:first-child .list-group-item:first-child {
