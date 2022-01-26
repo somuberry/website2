@@ -547,8 +547,12 @@ mark,
 	z-index: 2;
 }
 
-#imgOne:click {
+#imgOne {
 	background-color: lightcoral;
+}
+
+.collapsed {
+	background-color: #fff;
 }
 
 .opac {
