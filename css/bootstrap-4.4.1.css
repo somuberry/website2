@@ -551,8 +551,8 @@ mark,
 	background-color: lightcoral;
 }
 
-.collapsed {
-	background-color: #fff;
+a[aria-expanded="false"]{
+  background-color: #fff;
 }
 
 .opac {
