@@ -547,6 +547,10 @@ mark,
 	z-index: 2;
 }
 
+#imgOne:click {
+	background-color: lightcoral;
+}
+
 .opac {
 	opacity: 40%;
 }
