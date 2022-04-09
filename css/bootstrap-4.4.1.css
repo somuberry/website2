@@ -583,6 +583,10 @@ mark,
 	background-color: #D4EEE1;
 }
 
+#imgTen {
+	background-color: #FFDBBE;
+}
+
 a[aria-expanded="false"]{
   background-color: #fff;
 }
