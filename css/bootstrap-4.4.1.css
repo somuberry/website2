@@ -587,6 +587,11 @@ mark,
 	background-color: #FFDBBE;
 }
 
+#imgEleven {
+	background-color: #F9F7EB;
+}
+
+
 a[aria-expanded="false"]{
   background-color: #fff;
 }
