@@ -22,7 +22,23 @@
     }
   }
 
-										
+
+//--------------------
+//****COLLAPSE STUFF****
+//--------------------
+
+var div = document.getElementByClassName("collapsed")
+div.onclick = function(){
+	div.scrollIntoView({
+  behavior: "smooth",
+  block: "start",
+  inline: "nearest"
+});
+					
+//--------------------
+//****MODAL STUFF****
+//--------------------
+
 										
 // Get the modal
 var modal = document.getElementById("myModal");									
