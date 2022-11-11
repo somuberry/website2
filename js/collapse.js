@@ -194,11 +194,7 @@ const Collapse = (($) => {
         $(this._element).trigger(Event.SHOWN)
       }
     
-      //Addition
-	 if $(this._element).hasClass(ClassName.STICKY){
-		 this._element.scrollintoView 
-	       }
-//Addition 
+    
 	    
 	    
       if (!Util.supportsTransitionEnd()) {
@@ -306,7 +302,11 @@ const Collapse = (($) => {
       this._isTransitioning = null
     }
 
-	  
+  //Addition
+	  document.getElementByClassName("sticky") {
+		 this._element.scrollintoView 
+	       }
+//Addition 	  
 
 	  
 	  
