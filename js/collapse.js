@@ -47,6 +47,7 @@ const Collapse = (($) => {
     COLLAPSE   : 'collapse',
     COLLAPSING : 'collapsing',
     COLLAPSED  : 'collapsed',
+    STICKY     : 'sticky',
 	OPAC       : 'opac'
   }
 
@@ -59,6 +60,8 @@ const Collapse = (($) => {
     ACTIVES     : '.show, .collapsing',
     DATA_TOGGLE : '[data-toggle="collapse"]'
   }
+  
+
 
   /**
    * ------------------------------------------------------------------------
@@ -181,6 +184,8 @@ const Collapse = (($) => {
           .removeClass(ClassName.COLLAPSING)
           .addClass(ClassName.COLLAPSE)
           .addClass(ClassName.SHOW)
+	  .addClass(ClassName.STICKY)
+	// Addition ^
 
         this._element.style[dimension] = ''
 
@@ -188,7 +193,14 @@ const Collapse = (($) => {
 
         $(this._element).trigger(Event.SHOWN)
       }
-
+    
+      //Addition
+	 if $(this._element).hasClass(ClassName.STICKY){
+		 this._element.scrollintoView 
+	       }
+//Addition 
+	    
+	    
       if (!Util.supportsTransitionEnd()) {
         complete()
         return
@@ -204,7 +216,9 @@ const Collapse = (($) => {
 
       this._element.style[dimension] = `${this._element[scrollSize]}px`
     }
-	  
+
+
+		 
 	opacity () {
 	  if (this._element).hasClass(ClassName.COLLAPSED){
 		return
