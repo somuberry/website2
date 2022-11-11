@@ -22,18 +22,6 @@
     }
   }
 
-
-//--------------------
-//****COLLAPSE STUFF****
-//--------------------
-
-var div = document.getElementByClassName("show")
-div.onclick = function(){
-	div.scrollIntoView({
-  behavior: "smooth",
-  block: "start",
-  inline: "nearest"
-});
 					
 //--------------------
 //****MODAL STUFF****
