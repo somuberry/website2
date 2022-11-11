@@ -292,6 +292,20 @@ const Collapse = (($) => {
       this._isTransitioning = null
     }
 
+	  
+if (this._element).hasClass(ClassName.SHOW) {
+
+			var rect = sectionElement.getBoundingClientRect();
+
+			// If the section element is ABOVE THE VIEWPORT, adjust the scroll.
+			if ( rect.top < 0 ) {
+
+				window.scrollBy( 0, ( rect.top - 1 ) );
+				// NOTE: The (-4) is to adjust for the CSS styling of the page.
+
+			}
+	  
+	  
     // Private
 
     _getConfig(config) {
