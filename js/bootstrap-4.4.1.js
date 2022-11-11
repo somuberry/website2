@@ -27,7 +27,7 @@
 //****COLLAPSE STUFF****
 //--------------------
 
-var div = document.getElementByClassName("collapsed")
+var div = document.getElementByClassName("show")
 div.onclick = function(){
 	div.scrollIntoView({
   behavior: "smooth",
