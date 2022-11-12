@@ -27,8 +27,8 @@
 $('.collapse').on('shown.bs.collapse', function (e) {
     var $panel = $(this).closest('.cardback');
     $('html,body').animate({
-        scrollTop: $panel.offset(-300).top
-    }, 0); 
+        scrollTop: $panel.offset().top
+    }, -300); 
 }); 
 					
 //--------------------
