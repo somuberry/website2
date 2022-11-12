@@ -25,7 +25,7 @@
 //Addition
 					
 $('.collapse').on('shown.bs.collapse', function (e) {
-    var $panel = $(this).closest('.cardback');
+    var $panel = $(this).closest('.card');
     $('html,body').animate({
         scrollTop: $panel.offset().top
     }, -300); 
