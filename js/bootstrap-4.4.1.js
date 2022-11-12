@@ -25,10 +25,10 @@
 //Addition
 					
 $('.collapse').on('shown.bs.collapse', function (e) {
-    var $panel = $(this).closest('.row');
+    var $panel = $(this).closest('.cardback');
     $('html,body').animate({
-        scrollTop: $panel.offset().top
-    }, -300); 
+        scrollTop: $panel.offset().top - 300
+    }, 500); 
 }); 
 					
 //--------------------
